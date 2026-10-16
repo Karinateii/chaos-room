@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#171326">
+  <title>Chaos Room — a tiny party game</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar"><div class="brand"><span class="brand-mark">✳</span><span>CHAOS ROOM</span></div><div class="round-pill" id="round-pill" hidden></div></header>
+    <section id="toast" class="toast" role="status" hidden></section>
+    <section id="welcome" class="card welcome">
+      <div class="eyebrow">A VERY IMPORTANT GAME ABOUT NONSENSE</div><h1>Welcome to<br><span>Chaos Room.</span></h1>
+      <p>Five fast rounds. Questionable answers. One very official winner.</p>
+      <label for="name">Your name</label><input id="name" maxlength="16" placeholder="e.g. Captain Pickle" autocomplete="nickname">
+      <div class="button-row"><button id="create" class="primary">Create a room <span>↗</span></button></div>
+      <div class="divider"><span>OR JOIN YOUR FRIENDS</span></div>
+      <div class="join-row"><input id="room-code" maxlength="4" placeholder="ROOM CODE" autocomplete="off" aria-label="Room code"><button id="join" class="secondary">Join room</button></div>
+      <p class="fine-print">2–4 players · No account needed · Be kind, be chaotic</p>
+    </section>
+    <section id="game" class="card" hidden></section>
+    <footer>Made for friendly chaos <span>✳</span></footer>
+  </main>
+  <script src="/socket.io/socket.io.js"></script><script src="/client.js"></script>
+</body>
+</html>

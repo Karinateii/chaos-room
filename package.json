@@ -1,0 +1,11 @@
+{
+  "name": "chaos-room",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A small real-time multiplayer party game",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "dev": "node server.js", "test:flow": "node scripts/test-flow.js" },
+  "engines": { "node": ">=18" },
+  "dependencies": { "socket.io": "^4.8.1" },
+  "devDependencies": { "socket.io-client": "^4.8.1" }
+}
